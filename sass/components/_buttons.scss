@@ -1,3 +1,12 @@
+.wp-block-button {
+
+	.wp-block-button__link {
+		display: flex;
+		align-items: center;
+		gap: 4px;
+	}
+}
+
 .wp-block-button.is-style-with-arrow .wp-block-button__link {
 
 	display: flex;

@@ -1,11 +1,47 @@
-.stretched-link::after {
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    z-index: 1;
-    pointer-events: auto;
-    content: "";
-    background-color: rgba(0,0,0,0);
+a.stretched-link, .stretched-link > a {
+    position: initial !important;
+
+    &::after {
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        z-index: 1;
+        pointer-events: auto;
+        content: "";
+        background-color: rgba(0,0,0,0);
+    } 
+}
+
+.dflex {
+    display: flex;
+
+    &.flex-direction--column {
+        flex-direction: column;
+    }
+    &.flex-direction--row {
+        flex-direction: row;
+    }
+    &.flex-gap {
+        gap: var(--wp--custom--layout--block-gap);
+    }
+}
+
+.reserve-column--mobile {
+    @media ($below-mobile) {
+        flex-direction: column-reverse;
+    }
+}
+
+.has-text-align-center--mobile {
+    @media ($below-mobile) {
+        text-align: center;
+    }
+}
+
+.is-content-justification-center--mobile {
+    @media ($below-mobile) {
+        justify-content: center !important;
+    }
 }

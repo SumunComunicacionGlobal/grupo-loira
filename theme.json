@@ -13,89 +13,125 @@
 			"customGradient": false,
 			"palette": [
 				{
-					"slug": "background",
 					"color": "#FFFFFF",
-					"name": "Background"
+					"name": "Background",
+					"slug": "background"
 				},
 				{
-					"slug": "primary-10",
-					"color": "#F2EBFF",
-					"name": "Primary 10"
+					"color": "#1F171A",
+					"name": "Body Text",
+					"slug": "body-text"
 				},
 				{
-					"slug": "primary-30",
-					"color": "#C8A8FF",
-					"name": "Primary 30"
+					"color": "#051C2D",
+					"name": "Main color",
+					"slug": "main-color"
+				},
+				
+				{
+					"color": "#EAE5E5",
+					"name": "Primary 10",
+					"slug": "primary-10"
 				},
 				{
-					"slug": "primary",
-					"color": "#873FFA",
-					"name": "Primary"
+					"color": "#DBCB9E",
+					"name": "Primary 30",
+					"slug": "primary-30"
 				},
 				{
-					"slug": "primary-80",
-					"color": "#131B83",
-					"name": "Primary 80"
+					"color": "#CDAE4A",
+					"name": "Primary",
+					"slug": "primary"
 				},
 				{
-					"slug": "primary-100",
-					"color": "#070B41",
-					"name": "Primary 100"
-				},
-                {
-					"slug": "secondary-10",
-					"color": "#FDE8EA",
-					"name": "Secondary 10"
+					"color": "#665656",
+					"name": "Primary 80",
+					"slug": "primary-80"
 				},
 				{
-					"slug": "secondary-30",
-					"color": "#FF9EBA",
-					"name": "Secondary 30"
+					"color": "#302A2A",
+					"name": "Primary 100",
+					"slug": "primary-100"
 				},
 				{
-					"slug": "secondary",
-					"color": "#FF8B00",
-					"name": "Secondary"
+					"color": "#F9F6F4",
+					"name": "Secondary 10",
+					"slug": "secondary-10"
 				},
 				{
-					"slug": "secondary-80",
-					"color": "#E20916",
-					"name": "Secondary 80"
+					"color": "#EDE7E2",
+					"name": "Secondary 30",
+					"slug": "secondary-30"
 				},
 				{
-					"slug": "secondary-100",
-					"color": "#A4101A",
-					"name": "Secondary 100"
-				},
-                {
-					"slug": "accent-10",
-					"color": "#F9FFF6",
-					"name": "Accent 10"
+					"color": "#967463",
+					"name": "Secondary",
+					"slug": "secondary"
 				},
 				{
-					"slug": "accent-30",
-					"color": "#E6FFD8",
-					"name": "Accent 30"
+					"color": "#79845E",
+					"name": "Secondary 80",
+					"slug": "secondary-80"
 				},
 				{
-					"slug": "accent",
-					"color": "#C6FFA4",
-					"name": "Accent"
+					"color": "#2D2D2D",
+					"name": "Secondary 100",
+					"slug": "secondary-100"
 				},
 				{
-					"slug": "accent-80",
-					"color": "#A8D98B",
-					"name": "Accent 80"
+					"color": "#1D3691",
+					"name": "Tertiary 10",
+					"slug": "tertiary-10"
 				},
 				{
-					"slug": "accent-100",
-					"color": "#8DB574",
-					"name": "Accent 100"
+					"color": "#2E6039",
+					"name": "Tertiary 30",
+					"slug": "tertiary-30"
 				},
 				{
-					"slug": "gray-30",
+					"color": "#FFC602",
+					"name": "Tertiary",
+					"slug": "tertiary"
+				},
+				{
+					"color": "#E5332A",
+					"name": "Tertiary 80",
+					"slug": "tertiary-80"
+				},
+				{
+					"color": "#A00006",
+					"name": "Tertiary 100",
+					"slug": "tertiary-100"
+				},
+				{
+					"color": "#E5DCC6",
+					"name": "Accent 10",
+					"slug": "accent-10"
+				},
+				{
+					"color": "#EE8A41",
+					"name": "Accent 30",
+					"slug": "accent-30"
+				},
+				{
+					"color": "#A44716",
+					"name": "Accent",
+					"slug": "accent"
+				},
+				{
+					"color": "#718759",
+					"name": "Accent 80",
+					"slug": "accent-80"
+				},
+				{
+					"color": "#364436",
+					"name": "Accent 100",
+					"slug": "accent-100"
+				},
+				{
 					"color": "var(--wp--custom--color--neutral-30)",
-					"name": "Gray"
+					"name": "Gray",
+					"slug": "gray-30"
 				}
 			],
 			"gradients": [],
@@ -220,38 +256,45 @@
 					"fontFace": [
 						{
 							"fontDisplay": "block",
-							"fontFamily": "BW Nista",
+							"fontFamily": "Raleway",
 							"fontStretch": "normal",
 							"fontStyle": "normal",
-							"fontWeight": "400",
+							"fontWeight": "400 700",
 							"src": [
-								"file:./assets/fonts/BwNistaInt-Md.woff2"
+								"file:./assets/fonts/raleway/Raleway-VariableFont_wght.ttf"
 							]
 						},
 						{
 							"fontDisplay": "block",
-							"fontFamily": "BW Nista",
+							"fontFamily": "Raleway",
 							"fontStretch": "normal",
-							"fontStyle": "normal",
-							"fontWeight": "200",
+							"fontStyle": "italic",
+							"fontWeight": "400 700",
 							"src": [
-								"file:./assets/fonts/BwNistaInt-Lt.woff2"
-							]
-						},
-						{
-							"fontDisplay": "block",
-							"fontFamily": "BW Nista",
-							"fontStretch": "normal",
-							"fontStyle": "normal",
-							"fontWeight": "bold",
-							"src": [
-								"file:./assets/fonts/BwNistaInt-xBd.woff2"
+								"file:./assets/fonts/raleway/Raleway-Italic-VariableFont_wght.ttf"
 							]
 						}
 					],
-					"fontFamily": "\"BW Nista\", sans-serif",
+					"fontFamily": "\"Raleway\", sans-serif",
 					"name": "Main Font",
 					"slug": "main-font"
+				},
+				{
+					"fontFace": [
+						{
+							"fontDisplay": "block",
+							"fontFamily": "Zarathustra",
+							"fontStretch": "normal",
+							"fontStyle": "normal",
+							"fontWeight": "600",
+							"src": [
+								"file:./assets/fonts/zarathustra/Zarathustra_GL-Regular.otf"
+							]
+						}
+					],
+					"fontFamily": "\"Zarathustra\", serif",
+					"name": "Heading Font",
+					"slug": "heading-font"
 				}
 			],
             
@@ -263,7 +306,7 @@
 				},
 				{
 					"name": "H1",
-					"size": "clamp(3rem, 4.8vw, 4rem)",
+					"size": "clamp(2.8rem, 4.8vw, 4rem)",
 					"slug": "heading-1"
 				},
 				{
@@ -333,13 +376,16 @@
 				"color": {
 					"background": true
 				}
+			},
+			"core/image": {
+				"appearanceTools": true
 			}
 		}
 	},
 	"styles": {
 		"color": {
 			"background": "var(--wp--preset--color--background)",
-			"text": "var(--wp--preset--color--foreground)"
+			"text": "var(--wp--preset--color--body-text)"
 		},
 		"elements": {
 			"link": {
@@ -354,7 +400,7 @@
 				},
 				"border": {
 					"width": "0px",
-					"radius": "var(--wp--custom--border-radius--rounded)"
+					"radius": "0px"
 				},
 				"typography": {
 					"fontSize": "var(--wp--preset--font-size--body)",
@@ -367,7 +413,7 @@
 			},
 			"heading": {
 				"typography": {
-					"fontFamily": "var(--wp--preset--font-family--main-font)",
+					"fontFamily": "var(--wp--preset--font-family--heading-font)",
 					"lineHeight": "var(--wp--custom--line-height--headings)"
 				}
 			},
@@ -424,5 +470,17 @@
 				}
 			}
 		}
-	}
+	},
+	"templateParts": [
+		{
+			"area": "header",
+			"name": "header",
+			"title": "Header"
+		},
+		{
+			"area": "footer",
+			"name": "footer",
+			"title": "Footer"
+		}
+	]
 }

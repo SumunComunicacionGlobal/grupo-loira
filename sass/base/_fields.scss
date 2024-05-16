@@ -14,10 +14,10 @@ input[type="datetime"],
 input[type="datetime-local"],
 input[type="color"],
 textarea {
-	border-radius: var(--wp--custom--border-radius--md);
+	border-radius: 0;
 	border: 2px solid;
-	color: inherit;
-	background-color: transparent;
+	color: var(--wp--custom--color--neutral-90);
+	background-color: var(--wp--custom--color--neutral-10);
 	line-height: 1;
 	padding: 12px var(--wp--preset--spacing--10);
 	width: 100%;
@@ -47,4 +47,33 @@ select {
 
 textarea {
 	width: 100%;
+}
+
+button, input[type="submit"], input[type="reset"], input[type="button"] {
+	border: 0;
+	padding: 12px var(--wp--preset--spacing--10);
+	background-color: var(--wp--preset--color--accent-30);
+	color: var(--wp--preset--color--body-text);
+	cursor: pointer;
+	transition: background-color 0.3s ease, color 0.3s ease;
+
+	&:hover {
+		background-color: var(--wp--preset--color--primary-50);
+		color: var(--wp--preset--color--primary-100);
+	}
+
+	&:focus {
+		//outline-color: var(--wp--preset--color--accent);
+	}
+
+	&:disabled {
+		background-color: var(--wp--custom--color--neutral-10);
+		
+		color: var(--wp--preset--color--neutral-90);
+		cursor: not-allowed;
+	}
+
+	&.btn-full {
+		width: 100%;
+	}
 }

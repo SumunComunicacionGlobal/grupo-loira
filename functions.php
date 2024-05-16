@@ -28,6 +28,10 @@ if ( ! function_exists( 'smn_support' ) ) :
 
 		// Enqueue editor styles.
 		add_editor_style( 'style-editor.css' );
+
+		// Add excerpt to pages.
+		add_post_type_support( 'page', 'excerpt' );
+
 	}
 
 endif;

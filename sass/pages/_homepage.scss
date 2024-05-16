@@ -12,3 +12,31 @@ main {
         opacity: 1;
      }
 }
+
+.img-3-gsap {
+
+    img.wp-block-cover__image-background {
+        @media ($below-mobile) {
+            scale: 0.6;
+            transform-origin: bottom right;
+        }
+    }
+    
+}
+
+// Landing pages Styles
+
+#custom-gallery {
+
+    > .wp-block-group.alignfull {
+        
+        .wp-block-image {
+            z-index: 1;
+        }
+
+        .wp-block-image.custom-gallery--img-center {
+            scale: 1.2;
+            z-index: 0;
+        }
+    }
+}

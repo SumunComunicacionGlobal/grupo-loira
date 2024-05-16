@@ -1,15 +1,30 @@
 .is-style-group-horizontal-scroll {
-    gap: var(--wp--preset--spacing--10);
+    display: flex;
+    flex-wrap: nowrap;
+    gap: calc(var(--wp--preset--spacing--10) / 2);
+    
     padding: var(--wp--preset--spacing--10);
     margin: 0;
-    flex-wrap: nowrap;
+    
     overflow-x: auto;
     -webkit-overflow-scrolling: touch;
+    overscroll-behavior-inline: contain;
+    scroll-behavior: smooth;
+    scroll-snap-type: x mandatory;
     scrollbar-width: none;
-    display: flex;
+    
+    transition: all 0.2s;
+    transform: scale(0.98);
+    will-change: transform;
 
     &::-webkit-scrollbar {
         display: none;
+    }
+
+    &.active {
+        cursor: grabbing;
+        cursor: -webkit-grabbing;
+        transform: scale(1);
     }
 
     & > .wp-block-group, & > .wc-block-product  {
