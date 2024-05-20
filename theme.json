@@ -288,7 +288,7 @@
 							"fontStyle": "normal",
 							"fontWeight": "600",
 							"src": [
-								"file:./assets/fonts/zarathustra/Zarathustra_GL-Regular.otf"
+								"file:./assets/fonts/zarathustra/Zarathustra_GL-Regular.woff"
 							]
 						}
 					],

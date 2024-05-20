@@ -1,5 +1,10 @@
 #hero {
-    position: relative;
+    
+    .page-template-page-landing & {
+        @media ($below-mobile-xs) {
+            padding-top: 120px !important;
+        }
+    }
 
     .hero--img-sello {
         animation: heroAnimationImg ease 1s;
@@ -9,7 +14,7 @@
         opacity: 0;
 
         @media ($below-mobile) {
-            scale: 0.666;
+            width: 132px;
         }
     }
 

@@ -43,3 +43,41 @@ window.addEventListener("scroll", function() {
         document.body.classList.remove("scrolled");
     }
 });
+
+document.addEventListener('DOMContentLoaded', (event) => {
+    const covers = document.querySelectorAll('#modos-wall .wp-block-cover');
+
+    covers.forEach((element) => {
+        const heading = element.querySelector('h3.wp-block-heading');
+        const wordCount = heading.textContent.split(' ').length;
+        heading.setAttribute('data-height', wordCount);
+
+        element.addEventListener('click', () => {
+            covers.forEach((el) => {
+                el.classList.remove('expand');
+                el.classList.add('shrink');
+                // Reset the height of the h3 elements
+                const heading = el.querySelector('h3.wp-block-heading');
+                heading.style.height = '0';
+            });
+            element.classList.remove('shrink');
+            element.classList.add('expand');
+            // Set the height of the h3 element to its current height
+            const heading = element.querySelector('h3.wp-block-heading');
+            heading.style.height = `${wordCount * 2.33}vh`;
+        });
+    });
+
+    const wall = document.querySelector('#modos-wall');
+    wall.addEventListener('click', (event) => {
+        if (event.target === wall) {
+            covers.forEach((el) => {
+                el.classList.remove('shrink');
+                el.classList.remove('expand');
+                // Reset the height of the h3 elements
+                const heading = el.querySelector('h3.wp-block-heading');
+                heading.style.height = '0';
+            });
+        }
+    });
+});
