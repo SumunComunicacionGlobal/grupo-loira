@@ -118,6 +118,7 @@ main {
             transition: 1s ease-in 0.3s;
             transform-origin: center;
             margin: 0;
+            opacity: 0;
         }
 
         .wp-block-buttons {
@@ -130,6 +131,8 @@ main {
         &.expand {
             h3.wp-block-heading {
                 transform: translateY(0px);
+                height: 100%;
+                opacity: 1;
             }
 
             .wp-block-buttons {

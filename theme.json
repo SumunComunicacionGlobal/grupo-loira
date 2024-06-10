@@ -283,16 +283,16 @@
 					"fontFace": [
 						{
 							"fontDisplay": "block",
-							"fontFamily": "Zarathustra",
+							"fontFamily": "Lora",
 							"fontStretch": "normal",
 							"fontStyle": "normal",
 							"fontWeight": "600",
 							"src": [
-								"file:./assets/fonts/zarathustra/Zarathustra_GL-Regular.woff"
+								"file:./assets/fonts/lora/Lora-SemiBold.ttf"
 							]
 						}
 					],
-					"fontFamily": "\"Zarathustra\", serif",
+					"fontFamily": "\"Lora\", serif",
 					"name": "Heading Font",
 					"slug": "heading-font"
 				}
@@ -405,7 +405,8 @@
 				"typography": {
 					"fontSize": "var(--wp--preset--font-size--body)",
                     "fontFamily": "var(--wp--preset--font-family--main-font)",
-					"lineHeight": "var(--wp--custom--line-height--normal)"
+					"lineHeight": "var(--wp--custom--line-height--normal)",
+					"fontWeight": "600"
 				},
 				"spacing": {
 					"padding": "calc(0.5rem + 4px) 1.5em"
